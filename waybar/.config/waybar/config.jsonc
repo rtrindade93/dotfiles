@@ -1,0 +1,100 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 32,
+    "spacing": 4,
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+
+    // Layout partitioning
+    "modules-left": ["custom/arch", "hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["network", "bluetooth", "pulseaudio", "backlight", "battery", "custom/sysinfo", "custom/controlcenter"],
+
+    // Left Modules definitions
+    "custom/arch": {
+        "format": " 󰣇 ",
+        "tooltip": false,
+        "on-click": "rofi -show drun -show-icons"
+    },
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}",
+        "on-click": "hyprctl dispatch workspace {name}"
+    },
+
+    "hyprland/window": {
+        "format": "{initialClass}",
+        "max-length": 40,
+        "separate-outputs": true
+    },
+
+    // Center Modules definitions
+    "clock": {
+        "format": "{:%a %b %d  %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    // Right Modules definitions
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "󰈀 ",
+        "format-disconnected": "󰖪 ",
+        "tooltip-format": "{essid} ({signalStrength}%)",
+        "on-click": "exec ~/.config/scripts/wifi_manager.sh"
+    },
+
+    "bluetooth": {
+        "format": "",
+        "format-disabled": "",
+        "format-connected": " {num_connections}",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "exec ~/.config/scripts/bluetooth_manager.sh"
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟",
+        "format-icons": {
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{percent}% {icon}",
+        "format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"]
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "interval": 60,
+        "format": "{icon} {capacity}%",
+        "format-icons": {
+            "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+            "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+        }
+    },
+
+    "custom/sysinfo": {
+        "exec": "~/.config/scripts/sys_info.sh",
+        "return-type": "json",
+        "interval": 5, // Updates every 5 seconds
+        "tooltip": true
+    },
+
+    "custom/controlcenter": {
+        "format": " 󰕮 ",
+        "tooltip": false,
+        "on-click": "~/.config/scripts/rofi/control_center.sh"
+    }
+}

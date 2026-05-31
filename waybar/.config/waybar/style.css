@@ -1,0 +1,89 @@
+/* Catppuccin Mocha color map declarations */
+@define-color base      #1e1e2e;
+@define-color mantle    #181825;
+@define-color crust     #11111b;
+@define-color text      #cdd6f4;
+@define-color mauve     #cba6f7;
+@define-color blue      #89b4fa;
+@define-color surface1  #45475a;
+
+* {
+    font-family: "JetBrainsMono Nerd Font Propo", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    /* Translucent frosted glass effect using 75% opacity background */
+    background-color: rgba(30, 30, 46, 0.75);
+    color: @text;
+    transition-property: background-color;
+    transition-duration: .5s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Individual panel segments styling */
+#custom-arch {
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 5px;
+    color: @text;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: @text;
+    background-color: transparent;
+}
+
+#workspaces button.active {
+    color: @blue;
+    border-bottom: 2px solid @blue;
+}
+
+#workspaces button:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+#window {
+    padding-left: 15px;
+    font-weight: 500;
+}
+
+#clock {
+    font-weight: 700;
+}
+
+/* Control strip elements grouping look */
+#network,
+#bluetooth,
+#pulseaudio,
+#battery,
+#custom-controlcenter,
+#custom-sysinfo,
+#backlight {
+    padding: 0 10px;
+    color: @text;
+}
+
+/* Subtle highlight simulation when hovering options */
+#network:hover,
+#bluetooth:hover,
+#pulseaudio:hover,
+#battery:hover,
+#custom-controlcenter:hover,
+#custom-sysinfo:hover,
+#backlight:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+tooltip {
+  background: rgba(30, 30, 46, 0.8);
+  border-radius: 20px;
+}
+
+tooltip label {
+  color: @text;
+}

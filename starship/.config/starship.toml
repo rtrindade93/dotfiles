@@ -1,0 +1,83 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Insert a blank line between shell prompts for readability
+add_newline = true
+
+# All inline now! Caps close up, followed immediately by the character arrow
+format = """
+[](#89b4fa)\
+$username\
+[](bg:#313244 fg:#89b4fa)\
+$directory\
+[](bg:#45475a fg:#313244)\
+$git_branch\
+$git_status\
+[](fg:#45475a)\
+$character"""
+
+[username]
+show_always = true
+style_user = "bg:#89b4fa fg:#11111b bold"
+style_root = "bg:#89b4fa fg:#f38ba8 bold"
+format = '[$user ]($style)'
+disabled = false
+
+[directory]
+style = "bg:#313244 fg:#cdd6f4 bold"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = " "
+style = "bg:#45475a fg:#f5c2e7 bold"
+format = '[ $symbol$branch ]($style)'
+
+[git_status]
+style = "bg:#45475a fg:#f38ba8"
+format = '[([$ahead_behind](fg:#f5c2e7) )$all_status]($style)'
+conflicted = "🏳"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+up_to_date = ""
+untracked = ""
+stashed = "📦"
+modified = "📝"
+staged = "✅"
+renamed = "🚚"
+deleted = "🗑️"
+
+[character]
+success_symbol = " [❯](bold #a6e3a1) "
+error_symbol = " [❯](bold #f38ba8) "
+
+# Catppuccin Mocha Palette Colors
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
