@@ -42,3 +42,6 @@ alias nmtui="NEWT_COLORS='root=black,black;window=black,black;border=white,black
 
 # --- 5. Starship Initialization ---
 eval "$(starship init zsh)"
+
+# --- 6. Fastfetch Initialization ---
+fastfetch

@@ -1,0 +1,133 @@
+// Catppuccin Mocha - Arch Linux Config
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "arch",
+    "color": {
+      "1": "blue",
+      "2": "cyan"
+    },
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 4
+    }
+  },
+  "display": {
+    "separator": " \u001b[38;2;203;166;247m\u001b[0m ",
+    "constants": [
+      "\u001b[38;2;242;205;205m─────────────────\u001b[0m" // {$1}, used in Custom module
+    ],
+    "key": {
+      "type": "icon",
+      "paddingLeft": 2
+    }
+  },
+  "modules": [
+    {
+      "type": "custom", // HardwareStart
+      "format": "\u001b[38;2;242;205;205m┌\u001b[0m{$1} \u001b[38;2;203;166;247mHardware Information\u001b[0m {$1}\u001b[38;2;242;205;205m┐\u001b[0m"
+    },
+    {
+      "type": "host",
+      "keyColor": "35" // Pink
+    },
+    {
+      "type": "cpu",
+      "keyColor": "35"
+    },
+    {
+      "type": "gpu",
+      "keyColor": "35"
+    },
+    {
+      "type": "disk",
+      "keyColor": "35"
+    },
+    {
+      "type": "memory",
+      "keyColor": "35"
+    },
+    {
+      "type": "display",
+      "keyColor": "35"
+    },
+    {
+      "type": "custom", // InformationEnd
+      "format": "\u001b[38;2;242;205;205m└\u001b[0m{$1}\u001b[38;2;242;205;205m──────────────────────\u001b[0m{$1}\u001b[38;2;242;205;205m┘\u001b[0m"
+    },
+    {
+      "type": "custom", // Separator
+      "format": ""
+    },
+    {
+      "type": "custom", // SoftwareStart
+      "format": "\u001b[38;2;242;205;205m┌\u001b[0m{$1} \u001b[38;2;203;166;247mSoftware Information\u001b[0m {$1}\u001b[38;2;242;205;205m┐\u001b[0m"
+    },
+    {
+      "type": "os",
+      "keyColor": "35"
+    },
+    {
+      "type": "kernel",
+      "keyColor": "35"
+    },
+    {
+      "type": "lm",
+      "keyColor": "35"
+    },
+    {
+      "type": "de",
+      "keyColor": "35"
+    },
+    {
+      "type": "wm",
+      "keyColor": "35"
+    },
+    {
+      "type": "shell",
+      "keyColor": "35"
+    },
+    {
+      "type": "terminal",
+      "keyColor": "35"
+    },
+    {
+      "type": "font",
+      "keyColor": "35"
+    },
+    {
+      "type": "theme",
+      "keyColor": "35"
+    },
+    {
+      "type": "icons",
+      "keyColor": "35"
+    },
+    {
+      "type": "packages",
+      "keyColor": "35"
+    },
+    {
+      "type": "uptime",
+      "keyColor": "35"
+    },
+    {
+      "type": "locale",
+      "keyColor": "35"
+    },
+    {
+      "type": "custom", // InformationEnd
+      "format": "\u001b[38;2;242;205;205m└\u001b[0m{$1}\u001b[38;2;242;205;205m──────────────────────\u001b[0m{$1}\u001b[38;2;242;205;205m┘\u001b[0m"
+    },
+    {
+      "type": "custom", // Small blank spacer before the color blocks
+      "format": ""
+    },
+    {
+      "type": "colors",
+      "symbol": "circle",
+      "paddingLeft": 2
+    }
+  ]
+}
