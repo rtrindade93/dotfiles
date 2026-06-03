@@ -31,6 +31,7 @@ alias ls='eza'
 alias ll='eza -lah'
 alias tree='eza --tree'
 alias grep='grep --color=auto'
+alias ccache='([ -n "$(pacman -Qdtq)" ] && sudo pacman -Rns $(pacman -Qdtq) || echo "No orphans to clean."); sudo paccache -r; yay -Sc'
 alias ..='cd ..'
 alias ...='cd ../..'
 

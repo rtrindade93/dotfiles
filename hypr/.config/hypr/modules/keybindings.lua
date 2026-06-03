@@ -14,7 +14,7 @@ hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(apps.menu))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(apps.runner))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(apps.clipboardHistory))
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(secondMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(apps.fileManager))
 hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd(apps.controlCenter))
 
