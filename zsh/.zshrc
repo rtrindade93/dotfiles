@@ -40,8 +40,11 @@ alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 # nmtui dark mode
 alias nmtui="NEWT_COLORS='root=black,black;window=black,black;border=white,black;listbox=white,black;button=white,red;actlistbox=black,white;title=green,black' nmtui"
 
-# --- 5. Starship Initialization ---
+# --- 5. PATH ---
+export PATH=/home/ricardo/.opencode/bin:$PATH
+
+# --- 6. Starship Initialization ---
 eval "$(starship init zsh)"
 
-# --- 6. Fastfetch Initialization ---
+# --- 7. Fastfetch Initialization ---
 fastfetch
