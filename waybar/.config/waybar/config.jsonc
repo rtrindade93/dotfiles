@@ -89,7 +89,8 @@
         "exec": "~/.config/scripts/sys_info.sh",
         "return-type": "json",
         "interval": 5, // Updates every 5 seconds
-        "tooltip": true
+        "tooltip": true,
+        "on-click": "kitty -- btop"
     },
 
     "custom/controlcenter": {
