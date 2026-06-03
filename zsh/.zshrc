@@ -27,8 +27,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # --- 4. Quality of Life Aliases ---
 alias vim='nvim'
 
-alias ls='ls --color=auto'
-alias ll='ls -lah'
+alias ls='eza'
+alias ll='eza -lah'
+alias tree='eza --tree'
 alias grep='grep --color=auto'
 alias ..='cd ..'
 alias ...='cd ../..'
