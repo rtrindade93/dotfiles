@@ -18,6 +18,11 @@ hl.bind(secondMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(apps.fileManager))
 hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd(apps.controlCenter))
 
+-- Screenshot binds
+
+hl.bind("Print", hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | swappy -f -"))
+hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("grim $HOME/Images/Screenshots/Full_Screenshot_$(date +%Y%m%d_%H%M%S).png"))
+
 -- Move focus with mainMod + vim navigation keys
 hl.bind(mainMod .. " + h",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }))
