@@ -4,13 +4,19 @@ Personal configuration repository for Linux desktop environments. This repo cont
 
 ## Contents
 
+- `btop/` — configuration for the `btop` system monitor
 - `dunst/` — notification daemon configuration
+- `eza/` — configuration for the `eza` file listing utility
+- `fastfetch/` — configuration for the `fastfetch` system info tool
 - `hypr/` — Hyprland compositor configuration
 - `kitty/` — Kitty terminal emulator configuration
+- `opencode/` — configuration for the `opencode` editor or launcher
 - `rofi/` — Rofi application launcher and menu themes
 - `scripts/` — helper scripts and automation utilities
 - `starship/` — Starship prompt configuration
+- `swappy/` — configuration for the `swappy` screenshot editor
 - `waybar/` — Waybar status bar configuration
+- `yazi/` — configuration for the `yazi` note-taking or writing tool
 - `zsh/` — Zsh shell configuration and plugins
 
 ## Usage
