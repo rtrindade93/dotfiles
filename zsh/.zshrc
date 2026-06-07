@@ -48,5 +48,8 @@ export PATH=/home/ricardo/.opencode/bin:$PATH
 # --- 6. Starship Initialization ---
 eval "$(starship init zsh)"
 
-# --- 7. Fastfetch Initialization ---
+# --- 7. Mise Initialization ---
+eval "$(mise activate zsh)"
+
+# --- 8. Fastfetch Initialization ---
 fastfetch
