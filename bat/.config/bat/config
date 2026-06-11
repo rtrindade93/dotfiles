@@ -1,0 +1,8 @@
+# Set the custom color theme syntax layout
+--theme="Catppuccin Mocha"
+
+# Strip out the grid lines and file titles entirely for a minimalist stream look:
+--style="numbers,changes"
+
+# Wrap character lines automatically matching terminal width boundaries
+--wrap="character"

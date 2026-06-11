@@ -4,6 +4,7 @@ Personal configuration repository for Linux desktop environments. This repo cont
 
 ## Contents
 
+- `bat/` — configuration for the `bat` file viewer with syntax highlighting
 - `btop/` — configuration for the `btop` system monitor
 - `dunst/` — notification daemon configuration
 - `eza/` — configuration for the `eza` file listing utility
