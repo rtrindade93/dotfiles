@@ -10,7 +10,7 @@
     // Layout partitioning
     "modules-left": ["custom/arch", "hyprland/workspaces", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": ["network", "bluetooth", "pulseaudio", "backlight", "battery", "custom/sysinfo", "custom/controlcenter"],
+    "modules-right": ["custom/clau", "network", "bluetooth", "pulseaudio", "backlight", "battery", "custom/sysinfo", "custom/controlcenter"],
 
     // Left Modules definitions
     "custom/arch": {
@@ -39,6 +39,10 @@
     },
 
     // Right Modules definitions
+    "custom/clau": {
+        "format": "Clau <span color='#f38ba8'></span>"
+    },
+
     "network": {
         "format-wifi": "",
         "format-ethernet": "󰈀 ",
