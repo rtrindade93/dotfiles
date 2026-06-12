@@ -17,7 +17,7 @@ Personal configuration repository for Linux desktop environments. This repo cont
 - `starship/` — Starship prompt configuration
 - `swappy/` — configuration for the `swappy` screenshot editor
 - `waybar/` — Waybar status bar configuration
-- `yazi/` — configuration for the `yazi` note-taking or writing tool
+- `yazi/` — configuration for the `yazi` terminal file explorer
 - `zsh/` — Zsh shell configuration and plugins
 
 ## Usage
