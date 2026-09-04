@@ -5,7 +5,7 @@
 -- See https://wiki.hypr.land/Configuring/Basics/Autostart/
 
 hl.on("hyprland.start", function () 
-  hl.exec_cmd("awww-daemon & awww img /home/ricardo/Images/train-sideview.png")
+  hl.exec_cmd("awww-daemon & awww img /home/ricardo/Images/Wallpaper_rally_1_catppuccin.png")
   hl.exec_cmd("waybar")
   hl.exec_cmd("hyprctl setcursor catppuccin-mocha-light-cursors 24")
   hl.exec_cmd("dunst")

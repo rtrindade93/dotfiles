@@ -4,7 +4,7 @@
 local P = {}
 
 P.terminal = "kitty"
-P.fileManager = "dolphin"
+P.fileManager = "thunar"
 
 -- rofi
 P.menu = "rofi -show drun -show-icons"
